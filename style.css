@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.main_bg {
+    background: url(./images/bg-main-desktop.png) no-repeat;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+/* Upper card picture */
+
+.upper_card {
+    position: absolute;
+    bottom: 440px;
+    left: 180px;
+    color: white;
+}
+
+.upper_card .card_logo {
+    position: absolute;
+    bottom: 240px;
+    right: 320px;
+}
+
+.upper_card .main_num {
+    text-align: center;
+    position: relative;
+    bottom: 130px;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+.upper_card .personal_info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 28px;
+    font-size: 18px;
+
+    position: relative;
+    bottom: 90px;
+    
+}
+
+.upper_card .date_format {
+    display: flex;
+    gap: 5px;
+}
+
+/* Lower card picture */
+
+.lower_card .card_back {
+    position: absolute;
+    bottom: 220px;
+    left: 270px;
+
+}
+
+.lower_card .card_csv {
+    position: absolute;
+    bottom: 335px;
+    left: 620px;
+    color: white;
+
+    font-size: 18px;
+    letter-spacing: 3px;
+
+}
+
+/* Container */
+
+.container {
+    position: relative;
+    left: 870px;
+    top: 170px;
+    
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    color: hsl(278, 68%, 11%);
+
+    width: fit-content;
+}
+
+.container .name, .container .number, .container .lower_input{
+    margin-top: 30px;
+}
+
+.container div {
+    margin-top: 10px;
+}
+
+.container input {
+    height: 60px;
+    padding: 20px;
+    margin-top: 10px;
+    font-size: 18px;
+    border: 1px solid hsl(270, 3%, 87%);
+    border-radius: 5px;
+    color: hsl(278, 68%, 11%);
+}
+
+.container #CardHolder_Name, .container #card_number {
+    width: 460px;
+}
+
+.container .lower_input {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .lower_input .date input {
+    width: 90px;
+}
+
+.container .lower_input .cvc input {
+    width: 170px;
+}
+
+
+.container button {
+    width: 460px;
+    height: 60px;
+    font-size: 18px;
+    color: white;
+    background-color: hsl(278, 68%, 11%);
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.container button:hover {
+    opacity: 80%;
+    cursor: pointer;
+}
+
+
+.error {
+    color: red;
+    font-size: 16px;
+}
+
+/* Thank you screen */
+.container_ty {
+    text-align: center;
+    display: none;
+
+    width: 500px;
+    height: 500px;
+    
+    position: relative;
+    left: 850px;
+    bottom: 300px;
+}
+
+.container_ty h1 {
+    color: hsl(278, 68%, 11%);
+}
+
+.container_ty p {
+    color: hsl(279, 6%, 55%);
+    padding-top: 30px;
+    font-size: 18px;
+}
+
+.container_ty img {
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.container_ty button {
+    width: 460px;
+    height: 60px;
+    font-size: 18px;
+    color: white;
+    background-color: hsl(278, 68%, 11%);
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.container_ty button:hover {
+    opacity: 80%;
+    cursor: pointer;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .main_bg {
+        background: url(./images/bg-main-mobile.png) no-repeat center/cover;
+        height: 300px;
+    }
+
+    .upper_card {
+        z-index: 1;
+        left: 10px;
+        top: 165px;
+    }
+
+    .upper_card .card_logo {
+        top: 30px;
+
+    }
+
+    .lower_card {
+        position: absolute;
+        top: 490px;
+        right: 730px;
+    }
+
+    .container {
+        position: relative;
+        left: 50px;
+        width: 400px;
+        top: 400px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .container #CardHolder_Name, .container #card_number {
+        width: 400px;
+    }
+
+    .container button {
+        width: 400px;
+        margin-top: 5px;
+    }
+
+    .container_ty {
+        position: relative;
+        display: none;
+        left: 50px;
+        width: 400px;
+        height: fit-content;
+        bottom: 40px;
+        padding: 0;
+        margin: 0;
+
+        
+    }
+
+    .container_ty button {
+        width: 400px;
+    }
+}
+
+
+.attribution { 
+    font-size: 11px; text-align: center;
+ }
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
