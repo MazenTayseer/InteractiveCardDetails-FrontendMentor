@@ -197,6 +197,7 @@
     .main_bg {
         background: url(./images/bg-main-mobile.png) no-repeat center/cover;
         height: 300px;
+        width: 600px;
     }
 
     .upper_card {
